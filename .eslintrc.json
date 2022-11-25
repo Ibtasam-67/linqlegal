@@ -6,9 +6,9 @@
     "jest": true
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    // "eslint:recommended",
+    // "plugin:react/recommended",
+    // "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -19,15 +19,15 @@
   },
   "plugins": ["react"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
-    "react/prop-types": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ]
+    // "react/react-in-jsx-scope": "off",
+    // "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    // "react/prop-types": "off",
+    // "prettier/prettier": [
+    //   // "error",
+    //   // {
+    //   //   "endOfLine": "auto"
+    //   // }
+    // ]
   },
   "settings": {
     "react": {

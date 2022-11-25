@@ -2,7 +2,7 @@
 
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
-import { sales } from '../../constants/appConstants';
+import { postings } from '../../constants/appConstants';
 
 const Sales = () => {
   return (
@@ -16,7 +16,7 @@ const Sales = () => {
                   fontWeight: 'bolder'
                 }}> */}
       {/* {salesTabName}*/}
-      {sales.map((tab, index) => {
+      {postings.map((tab, index) => {
         // console.log(tab);
         return (
           // <>{tab.title} </>  

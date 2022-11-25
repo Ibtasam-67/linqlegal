@@ -12,7 +12,7 @@ const Panel = () => {
       <PanelBar>
         <PanelBarItem title={'Matters'} />
         {sidebarData.map((item, index) => {
-          console.log(item);
+          // console.log(item);
           return (
             <>
               <span

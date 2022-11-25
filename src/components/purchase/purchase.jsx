@@ -1,30 +1,41 @@
-// import React, { useContext } from 'react';
+/* eslint-disable no-unused-vars */
+
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
-// import { TabContext } from '../../contex/tabContext';
+import { purchases } from '../../constants/appConstants';
 
-const Purchase = () => {
-  // const { purchaseTabname } = useContext(TabContext);
-
+const Sales = () => {
   return (
     <div className="demo-wrapper">
-      <TabStrip>
+      {/* <TabStrip>
         <TabStripTab>
           <div className="wrapper">
             <div className="details">
               <span
                 style={{
                   fontWeight: 'bolder'
-                }}>
-                {/* {purchaseTabname} */}
-                jdjd
-              </span>
+                }}> */}
+      {/* {salesTabName}*/}
+      {purchases.map((tab, index) => {
+        // console.log(tab);
+        return (
+          // <>{tab.title} </>  
+                <button
+                  style={{
+                    fontWeight: 'bolder',
+                    paddingRight:10
+                  }}>
+                  {tab.name} 
+                </button>  
+        );
+      })}
+      {/* </span>
             </div>
           </div>
         </TabStripTab>
-      </TabStrip>
+      </TabStrip> */}
     </div>
   );
 };
 
-export default Purchase;
+export default Sales;

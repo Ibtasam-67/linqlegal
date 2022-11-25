@@ -1,6 +1,7 @@
 import Matters from '../components/matters/matters';
 // import Nominals from '../components/nominal/nominal';
-import Purchase from '../components/purchase/purchase';
+import Posting from '../components/purchase/purchase';
+import Purchase from '../components/Postings';
 import Sales from '../components/sales/sales';
 
 const imagesUrl =
@@ -10,7 +11,7 @@ export const tabs = [
   {
     title: 'Matters',
     image: `${imagesUrl}sun.png`,
-    component: <Matters />
+    component: <Posting />
   },
   {
     title: 'Sales',
@@ -26,11 +27,49 @@ export const tabs = [
 
 export const matters = ['Matter Ledger'];
 
-export const sales = ['Bank Posting', 'Journal Posting', 'Sales Reports'];
+export const sales = [
+  {
+    name:'Bank Posting',
+    route:'posting',
+  } ,
+  {
+    name:'Journal Posting',
+    route:'posting',
+  } ,
+  {
+    name:'Sales Reports',
+    route:'reports',
+  } ,
+  ];
 
-export const postings = ['Matter Ledgers', 'Bills', 'Clients Postings'];
+export const postings = [
+  {
+    name:'Matter Ledgers',
+    route:'ledger',
+  } ,
+  {
+    name:'Bills',
+    route:'bills',
+  } ,
+  {
+    name:'Clients Postings',
+    route:'clientposting',
+  } ,
+  ];
+ 
 
-export const purchases = ['Suppliers', 'Suppliers Ledger', ' Purchase Invoice', 'Disburcements'];
+export const purchases = [
+  {
+    name:'Bank Posting',
+    route:'bankPosting',
+  } ,
+  {
+    name:'Journal Posting',
+    route:'bankJournal',
+  } ,
+  
+  ];
+
 
 export const utilities = {
   id: 'utilities',
