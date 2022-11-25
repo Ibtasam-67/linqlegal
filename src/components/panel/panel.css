@@ -1,0 +1,10 @@
+.li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px;
+}
+@media (max-width: 969px) {
+  .li {
+    padding: 2px;
+  }
+}
