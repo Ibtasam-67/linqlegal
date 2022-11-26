@@ -11,17 +11,22 @@ export const tabs = [
   {
     title: 'Matters',
     image: `${imagesUrl}sun.png`,
-    component: <Posting />
+    component: <Posting />,
+    route:"matterPosting"
   },
   {
     title: 'Sales',
     image: `${imagesUrl}rain.png`,
-    component: <Sales />
+    component: <Sales />,
+    route:"salePosting"
+
   },
   {
     title: 'Purchase',
     image: `${imagesUrl}sun.png`,
-    component: <Purchase />
+    component: <Purchase />,
+    route:"bankPosting"
+
   }
 ];
 
@@ -29,17 +34,10 @@ export const matters = ['Matter Ledger'];
 
 export const sales = [
   {
-    name:'Bank Posting',
+    name:'sale Posting',
     route:'posting',
   } ,
-  {
-    name:'Journal Posting',
-    route:'posting',
-  } ,
-  {
-    name:'Sales Reports',
-    route:'reports',
-  } ,
+   
   ];
 
 export const postings = [
@@ -65,7 +63,7 @@ export const purchases = [
   } ,
   {
     name:'Journal Posting',
-    route:'bankJournal',
+    route:'journalPosting',
   } ,
   
   ];

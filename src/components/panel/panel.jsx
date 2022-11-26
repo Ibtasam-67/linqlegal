@@ -21,7 +21,7 @@ const Panel = () => {
                 style={{ cursor: 'pointer' }}
                 // onClick={() => tabsClickitems(item)}
               >
-                <Link to={item.url}>{item.title}</Link>
+                <Link to={item.url }>{item.title}</Link>
               </span>
             </>
           );

@@ -7,7 +7,7 @@ const Bank = () => {
   
               
               <span>
-                Bank Posting Component
+                Sale Posting Component
               </span>
      
     </div>

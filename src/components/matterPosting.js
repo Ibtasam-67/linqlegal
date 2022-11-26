@@ -7,7 +7,7 @@ const Bank = () => {
   
               
               <span>
-                Bank Posting Component
+                Matter Posting Component
               </span>
      
     </div>

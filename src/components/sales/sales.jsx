@@ -3,7 +3,7 @@
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
 import { sales } from '../../constants/appConstants';
-
+import {Outlet} from 'react-router-dom'
 const Sales = () => {
   return (
     <div className="demo-wrapper">
@@ -34,6 +34,7 @@ const Sales = () => {
           </div>
         </TabStripTab>
       </TabStrip> */}
+      <Outlet/>
     </div>
   );
 };

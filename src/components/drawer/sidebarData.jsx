@@ -24,7 +24,7 @@ export const sidebarData = [
     id: 'sales',
     title: 'Sales',
     type: 'item',
-    url: '/bankposting'
+    url: '/saleposting'
   },
   {
     id: 'matter ledger',
@@ -42,12 +42,12 @@ export const sidebarData = [
     id: 'bank-posting',
     title: 'Bank Posting',
     type: 'item',
-    url: '/purchase/bankposting'
+    url: '/bankposting'
   },
   {
     id: 'journal-posting',
     title: 'Journal Posting',
     type: 'item',
-    url: '/purchase/journalposting'
+    url: '/journalPosting'
   }
 ];
