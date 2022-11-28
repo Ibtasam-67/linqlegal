@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const Bank = () => {
+const Suppliers = () => {
   return (
     <div>
-      <span>Journal Posting Component</span>
+      <span>Suppliers</span>
     </div>
   );
 };
 
-export default Bank;
+export default Suppliers;

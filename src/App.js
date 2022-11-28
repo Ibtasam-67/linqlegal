@@ -5,14 +5,16 @@ import Drawer from './components/drawer/drawer';
 import Purchase from './components/purchase/purchase';
 import Sales from './components/sales/sales';
 import Postings from './components/Postings';
-import BankPosting from './components/bankPosting';
-import JournalPosting from './components/journalPosting';
-import Posting from './components/posting';
+import SuppliersLedger from './components/purchaseComponenets/suppliersLedger';
+import SalePosting from './components/purchaseComponenets/salePosting';
 import MatterPosting from './components/matterPosting';
 import Home from './components/home/home';
 import ParentTabs from './components/tabs/parentTab';
 import Navbar from './components/navbar/navbar';
 import './App.css';
+import Suppliers from './components/purchaseComponenets/suppliers';
+import PurchaseInvoice from './components/purchaseComponenets/purchaseInvoice';
+import Disburcements from './components/purchaseComponenets/disburcements';
 
 function App() {
   return (
@@ -25,16 +27,17 @@ function App() {
 
           <Route element={<ParentTabs />}>
             <Route element={<Sales />}>
-              <Route path="/sales/posting" element={<Posting />} />
+              <Route path="/saleposting" element={<SalePosting />} />
             </Route>
 
             <Route element={<Postings />}>
               <Route path="/matterPosting" element={<MatterPosting />} />
             </Route>
-            
             <Route element={<Purchase />}>
-              <Route path="/bankPosting" element={<BankPosting />} />
-              <Route path="/JournalPosting" element={<JournalPosting />} />
+              <Route path="/suppliers" element={<Suppliers />} />
+              <Route path="/supplierledger" element={<SuppliersLedger />} />
+              <Route path="/purchaceinvoice" element={<PurchaseInvoice />} />
+              <Route path="/disburcements" element={<Disburcements />} />
             </Route>
           </Route>
         </Route>

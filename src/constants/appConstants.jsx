@@ -12,21 +12,19 @@ export const tabs = [
     title: 'Matters',
     image: `${imagesUrl}sun.png`,
     component: <Posting />,
-    route:"matterPosting"
+    route: 'matterPosting'
   },
   {
     title: 'Sales',
     image: `${imagesUrl}rain.png`,
     component: <Sales />,
-    route:"salePosting"
-
+    route: 'salePosting'
   },
   {
     title: 'Purchase',
     image: `${imagesUrl}sun.png`,
     component: <Purchase />,
-    route:"bankPosting"
-
+    route: 'bankPosting'
   }
 ];
 
@@ -34,90 +32,42 @@ export const matters = ['Matter Ledger'];
 
 export const sales = [
   {
-    name:'Sale Posting',
-    route:'posting',
-  } ,
-   
-  ];
+    name: 'Sale Posting',
+    route: 'posting'
+  }
+];
 
 export const postings = [
   {
-    name:'Matter Ledgers',
-    route:'ledger',
-  } ,
+    name: 'Matter Ledgers',
+    route: 'ledger'
+  },
   {
-    name:'Bills',
-    route:'bills',
-  } ,
+    name: 'Bills',
+    route: 'bills'
+  },
   {
-    name:'Clients Postings',
-    route:'clientposting',
-  } ,
-  ];
- 
+    name: 'Clients Postings',
+    route: 'clientposting'
+  }
+];
 
 export const purchases = [
   {
-    name:'Bank Posting',
-    route:'bankPosting',
-  } ,
+    name: 'Suppliers',
+    route: 'suppliers'
+  },
   {
-    name:'Journal Posting',
-    route:'journalPosting',
-  } ,
-  
-  ];
+    name: 'Suppliers Ledger',
+    route: 'supplierledger'
+  },
+  {
+    name: 'Purchace Invoice',
+    route: 'purchaceinvoice'
+  },
 
-
-// export const utilities = {
-//   id: 'utilities',
-//   title: 'Utilities',
-//   type: 'group',
-//   children: [
-//     {
-//       id: 'dashboard',
-//       title: 'Dashboard',
-//       type: 'item',
-//       url: '/dashboard'
-//     },
-
-//     {
-//       id: 'matters',
-//       title: 'Matters',
-//       type: 'item',
-//       url: '/matters'
-//     },
-
-//     {
-//       id: 'contacts',
-//       title: 'Contacts',
-//       type: 'item',
-//       url: '/contacts'
-//     },
-
-//     {
-//       id: 'sales',
-//       title: 'Sales',
-//       type: 'item',
-//       url: '/sales'
-//     },
-//     {
-//       id: 'purchace',
-//       title: 'Purchace',
-//       type: 'item',
-//       url: '/purchace'
-//     },
-//     {
-//       id: 'suppliers',
-//       title: 'Suppliers',
-//       type: 'item',
-//       url: '/suppliers'
-//     },
-//     {
-//       id: 'supplier-ledger',
-//       title: 'Supplier Ledger',
-//       type: 'item',
-//       url: '/supplierledger'
-//     }
-//   ]
-// };
+  {
+    name: 'Disburcements',
+    route: 'disburcements'
+  }
+];

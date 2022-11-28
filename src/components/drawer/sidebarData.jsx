@@ -6,12 +6,12 @@ export const sidebarData = [
     // url: '/dashboard'
   },
 
-    // {
-    //   id: 'matters',
-    //   title: 'Matters',
-    //   type: 'item',
-    //   url: '/matters'
-    // },
+  // {
+  //   id: 'matters',
+  //   title: 'Matters',
+  //   type: 'item',
+  //   url: '/matters'
+  // },
 
   // {
   //   id: 'contacts',
@@ -22,16 +22,26 @@ export const sidebarData = [
 
   {
     id: 'sales',
-    title: 'Postings',
+    title: 'Sales',
     type: 'item',
-    url: '/sales/posting'
+    url: '/saleposting'
   },
   {
     id: 'matter ledger',
-    title: 'Matter Ledger',
+    // title: 'Matter Ledger',
     type: 'item',
-    url: '/matterledger'
+    url: 'sales/matterledger'
   },
+
+
+
+
+
+
+
+
+
+  // =======================================PURCHASES============================
   {
     id: 'purchace',
     // title: '2..Purchace',
@@ -39,15 +49,27 @@ export const sidebarData = [
     url: '/purchase/invoice'
   },
   {
-    id: 'bank-posting',
-    title: 'Bank Posting',
+    id: 'suppliers',
+    title: 'Suppliers',
     type: 'item',
-    url: '/bankposting'
+    url: '/suppliers'
   },
   {
-    id: 'journal-posting',
-    title: 'Journal Posting',
+    id: 'supplier-ledger',
+    title: 'Supplier Ledger',
     type: 'item',
-    url: '/journalPosting'
+    url: '/supplierledger'
+  },
+  {
+    id: 'purchace-invoice',
+    title: 'Purchase Invoice',
+    type: 'item',
+    url: '/purchaceinvoice'
+  },
+  {
+    id: 'disburcements',
+    title: 'Disburcemets',
+    type: 'item',
+    url: '/disburcements'
   }
 ];

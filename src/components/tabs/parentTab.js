@@ -17,12 +17,7 @@ const Tabs = () => {
   const [selected, setSelected] = useState(0);
 
   const navigate = useNavigate();
-  // const navigate=useNavigate()
-  const handleSelect = (e) => {
-    navigate();
-    // setSelected(e.selected);
-    // console.log(e.selected);
-  };
+ 
   return (
     <div className="demo-wrapper">
       <TabStrip selected={selected}>
