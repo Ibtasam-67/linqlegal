@@ -34,7 +34,7 @@ export const matters = ['Matter Ledger'];
 
 export const sales = [
   {
-    name:'sale Posting',
+    name:'Sale Posting',
     route:'posting',
   } ,
    
@@ -69,55 +69,55 @@ export const purchases = [
   ];
 
 
-export const utilities = {
-  id: 'utilities',
-  title: 'Utilities',
-  type: 'group',
-  children: [
-    {
-      id: 'dashboard',
-      title: 'Dashboard',
-      type: 'item',
-      url: '/dashboard'
-    },
+// export const utilities = {
+//   id: 'utilities',
+//   title: 'Utilities',
+//   type: 'group',
+//   children: [
+//     {
+//       id: 'dashboard',
+//       title: 'Dashboard',
+//       type: 'item',
+//       url: '/dashboard'
+//     },
 
-    {
-      id: 'matters',
-      title: 'Matters',
-      type: 'item',
-      url: '/matters'
-    },
+//     {
+//       id: 'matters',
+//       title: 'Matters',
+//       type: 'item',
+//       url: '/matters'
+//     },
 
-    {
-      id: 'contacts',
-      title: 'Contacts',
-      type: 'item',
-      url: '/contacts'
-    },
+//     {
+//       id: 'contacts',
+//       title: 'Contacts',
+//       type: 'item',
+//       url: '/contacts'
+//     },
 
-    {
-      id: 'sales',
-      title: 'Sales',
-      type: 'item',
-      url: '/sales'
-    },
-    {
-      id: 'purchace',
-      title: 'Purchace',
-      type: 'item',
-      url: '/purchace'
-    },
-    {
-      id: 'suppliers',
-      title: 'Suppliers',
-      type: 'item',
-      url: '/suppliers'
-    },
-    {
-      id: 'supplier-ledger',
-      title: 'Supplier Ledger',
-      type: 'item',
-      url: '/supplierledger'
-    }
-  ]
-};
+//     {
+//       id: 'sales',
+//       title: 'Sales',
+//       type: 'item',
+//       url: '/sales'
+//     },
+//     {
+//       id: 'purchace',
+//       title: 'Purchace',
+//       type: 'item',
+//       url: '/purchace'
+//     },
+//     {
+//       id: 'suppliers',
+//       title: 'Suppliers',
+//       type: 'item',
+//       url: '/suppliers'
+//     },
+//     {
+//       id: 'supplier-ledger',
+//       title: 'Supplier Ledger',
+//       type: 'item',
+//       url: '/supplierledger'
+//     }
+//   ]
+// };

@@ -5,7 +5,7 @@ import {  Outlet, useNavigate } from 'react-router-dom';
 
 import { purchases } from '../../constants/appConstants';
 
-const Sales = () => {
+const Purchase = () => {
   const navigate=useNavigate()
   return (
     <div className="demo-wrapper">
@@ -17,7 +17,7 @@ const Sales = () => {
                 style={{
                   fontWeight: 'bolder'
                 }}> */}
-      {/* {salesTabName}*/}
+   
       {purchases.map((tab, index) => {
         // console.log(tab);
         return (
@@ -48,4 +48,4 @@ const Sales = () => {
   );
 };
 
-export default Sales;
+export default Purchase;

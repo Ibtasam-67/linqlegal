@@ -1,17 +1,17 @@
 export const sidebarData = [
   {
     id: 'dashboard',
-    title: 'Dashboard',
+    // title: 'Dashboard',
     type: 'item',
-    url: '/dashboard'
+    // url: '/dashboard'
   },
 
-  // {
-  //   id: 'matters',
-  //   title: 'Matters',
-  //   type: 'item',
-  //   url: '/matters'
-  // },
+    // {
+    //   id: 'matters',
+    //   title: 'Matters',
+    //   type: 'item',
+    //   url: '/matters'
+    // },
 
   // {
   //   id: 'contacts',
@@ -22,19 +22,19 @@ export const sidebarData = [
 
   {
     id: 'sales',
-    title: 'Sales',
+    title: 'Postings',
     type: 'item',
-    url: '/saleposting'
+    url: '/sales/posting'
   },
   {
     id: 'matter ledger',
     title: 'Matter Ledger',
     type: 'item',
-    url: 'sales/matterledger'
+    url: '/matterledger'
   },
   {
     id: 'purchace',
-    title: '2..Purchace',
+    // title: '2..Purchace',
     type: 'item',
     url: '/purchase/invoice'
   },

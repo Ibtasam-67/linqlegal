@@ -4,7 +4,7 @@ import React from 'react';
 const Bank = () => {
   return (
     <div>
-      <span>Journal Posting Component</span>
+      <span>Sale Posting Component</span>
     </div>
   );
 };

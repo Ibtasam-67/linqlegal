@@ -3,38 +3,24 @@
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
 import { sales } from '../../constants/appConstants';
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 const Sales = () => {
   return (
     <div className="demo-wrapper">
-      {/* <TabStrip>
-        <TabStripTab>
-          <div className="wrapper">
-            <div className="details">
-              <span
-                style={{
-                  fontWeight: 'bolder'
-                }}> */}
-      {/* {salesTabName}*/}
       {sales.map((tab, index) => {
         // console.log(tab);
         return (
-          // <>{tab.title} </>  
-                <button
-                  style={{
-                    fontWeight: 'bolder',
-                    paddingRight:10
-                  }}>
-                  {tab.name} 
-                </button>  
+          <TabStrip>
+            <TabStripTab title={tab.name} key={index}>
+              <div className="wrapper">
+                <div className="details">
+                </div>
+              </div>
+            </TabStripTab>
+          </TabStrip>
         );
       })}
-      {/* </span>
-            </div>
-          </div>
-        </TabStripTab>
-      </TabStrip> */}
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };

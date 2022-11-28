@@ -1,7 +1,6 @@
 import React from 'react';
-import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
-const Matters = () => {
+const Home = () => {
   return (
     <div className="demo-wrapper">
           <div className="wrapper">
@@ -18,4 +17,4 @@ const Matters = () => {
   );
 };
 
-export default Matters;
+export default Home;
