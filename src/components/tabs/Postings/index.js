@@ -9,7 +9,7 @@ const Sales = () => {
             style={{
               fontWeight: 'bolder'
             }}>
-            Matters
+            Matters tab
           </span>
         </div>
       </div>

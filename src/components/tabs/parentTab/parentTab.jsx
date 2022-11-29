@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 import { useNavigate, Outlet } from 'react-router-dom';
 
-import { tabs } from '../../constants/appConstants';
+import { tabs } from '../../../constants/appConstants';
 
 const Title = (props) => {
   return (
@@ -13,13 +13,12 @@ const Title = (props) => {
 };
 
 const Tabs = () => {
-
   const [selected, setSelected] = useState(0);
   const navigate = useNavigate();
   const handleSelect = (e) => {
     setSelected(e.selected);
   };
-  
+
   return (
     <div className="demo-wrapper">
       <TabStrip selected={selected} onSelect={handleSelect}>

@@ -1,49 +1,54 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import Drawer from './components/drawer/drawer';
-import Purchase from './components/purchase/purchase';
-import Sales from './components/sales/sales';
-import Postings from './components/Postings';
-import SuppliersLedger from './components/purchaseComponenets/suppliersLedger';
-import SalePosting from './components/salesComponents/salePosting';
-import MatterPosting from './components/matterPosting';
-import Home from './components/home/home';
-import ParentTabs from './components/tabs/parentTab';
-import Navbar from './components/navbar/navbar';
-import Suppliers from './components/purchaseComponenets/suppliers';
-import PurchaseInvoice from './components/purchaseComponenets/purchaseInvoice';
-import Disburcements from './components/purchaseComponenets/disburcements';
-import MatterLedger from './components/salesComponents/matterLedger';
-import Bills from './components/salesComponents/bills';
-import ClientPostings from './components/salesComponents/clientPostings';
+import {
+  Drawerr,
+  Purchasee,
+  Saless,
+  Postingss,
+  SuppliersLedgerr,
+  Supplierss,
+  PurchaseInvoicee,
+  Disburcementss,
+  Navbarr,
+  ParentTabss,
+  SalePostingg,
+  MatterLedgerr,
+  Billss,
+  ClientPostingss,
+  MatterPostingg,
+  Homee,
+  PurchasePostingg
+} from './components/index';
+
 import './App.css';
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbarr />
 
       <Routes>
-        <Route element={<Drawer />}>
-          <Route path="/" element={<Home />} />
+        <Route element={<Drawerr />}>
+          <Route path="/" element={<Homee />} />
 
-          <Route element={<ParentTabs />}>
-            <Route element={<Sales />}>
-              <Route path="/posting" element={<SalePosting />} />
-              <Route path="/matterledger" element={<MatterLedger />} />
-              <Route path="/bills" element={<Bills />} />
-              <Route path="/clientpostings" element={<ClientPostings />} />
+          <Route element={<ParentTabss />}>
+            <Route element={<Saless />}>
+              <Route path="/posting" element={<SalePostingg />} />
+              <Route path="/matterledger" element={<MatterLedgerr />} />
+              <Route path="/bills" element={<Billss />} />
+              <Route path="/clientpostings" element={<ClientPostingss />} />
             </Route>
 
-            <Route element={<Postings />}>
-              <Route path="/matterPosting" element={<MatterPosting />} />
+            <Route element={<Postingss />}>
+              <Route path="/matterPosting" element={<MatterPostingg />} />
             </Route>
-            <Route element={<Purchase />}>
-              <Route path="/suppliers" element={<Suppliers />} />
-              <Route path="/supplierledger" element={<SuppliersLedger />} />
-              <Route path="/purchaceinvoice" element={<PurchaseInvoice />} />
-              <Route path="/disburcements" element={<Disburcements />} />
+            <Route element={<Purchasee />}>
+              <Route path="/purchase" element={<PurchasePostingg />} />
+              <Route path="/suppliers" element={<Supplierss />} />
+              <Route path="/supplierledger" element={<SuppliersLedgerr />} />
+              <Route path="/purchaceinvoice" element={<PurchaseInvoicee />} />
+              <Route path="/disburcements" element={<Disburcementss />} />
             </Route>
           </Route>
         </Route>

@@ -12,7 +12,7 @@ import './panel.css';
 
 const Panel = () => {
   return (
-    <div className="panelbar-wrapper">
+    <div  className='parent'>
       <PanelBar>
         {panelBar.map((item, index) => {
           return (
@@ -25,7 +25,7 @@ const Panel = () => {
           );
         })}
 
-        <PanelBarItem title={'Sales'}>
+        <PanelBarItem title={'Sales'}  >
           {sidebarDataSales.map((item, index) => {
             return (
               <div key={index} className="icons-text">

@@ -1,17 +1,14 @@
 export const tabs = [
   {
     title: 'Matters',
-
     route: 'matterPosting'
   },
   {
     title: 'Sales',
-
     route: 'posting'
   },
   {
     title: 'Purchase',
-
     route: 'purchase'
   }
 ];

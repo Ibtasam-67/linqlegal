@@ -3,7 +3,7 @@
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 import { Outlet, useNavigate } from 'react-router-dom';
 
-import { sales } from '../../constants/appConstants';
+import { sales } from '../../../constants/appConstants';
 
 const Sales = () => {
   const navigate = useNavigate();
