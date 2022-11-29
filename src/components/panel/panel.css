@@ -1,10 +1,21 @@
-.li {
+.icons-text {
   display: flex;
-  justify-content: flex-start;
   padding: 6px;
+  cursor: pointer;
 }
-@media (max-width: 969px) {
-  .li {
-    padding: 2px;
-  }
+.icons {
+  font-size: 18px;
+}
+
+.text {
+  padding-left: 10px;
+  /* color: #FF7B58; */
+  color: grey;
+  font-weight: 600;
+}
+a:link {
+  text-decoration: none;
+}
+.panel-bar-items {
+  padding-left: 10px;
 }

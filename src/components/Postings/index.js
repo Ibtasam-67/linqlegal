@@ -1,9 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
-
-import { postings } from '../../constants/appConstants';
-
 const Sales = () => {
   return (
     <div>

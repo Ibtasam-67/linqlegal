@@ -1,5 +1,3 @@
-import Matters from '../components/matters/matters';
-// import Nominals from '../components/nominal/nominal';
 import Posting from '../components/purchase/purchase';
 import Purchase from '../components/Postings';
 import Sales from '../components/sales/sales';
@@ -18,29 +16,24 @@ export const tabs = [
     title: 'Sales',
     image: `${imagesUrl}rain.png`,
     component: <Sales />,
-    route: 'salePosting'
+    route: 'posting'
   },
   {
     title: 'Purchase',
     image: `${imagesUrl}sun.png`,
     component: <Purchase />,
-    route: 'bankPosting'
+    route: 'purchase'
   }
 ];
-
-export const matters = ['Matter Ledger'];
 
 export const sales = [
   {
-    name: 'Sale Posting',
+    name: 'Postings',
     route: 'posting'
-  }
-];
-
-export const postings = [
+  },
   {
     name: 'Matter Ledgers',
-    route: 'ledger'
+    route: 'matterledger'
   },
   {
     name: 'Bills',
@@ -48,7 +41,7 @@ export const postings = [
   },
   {
     name: 'Clients Postings',
-    route: 'clientposting'
+    route: 'clientpostings'
   }
 ];
 

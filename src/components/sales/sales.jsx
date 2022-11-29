@@ -1,25 +1,29 @@
 /* eslint-disable no-unused-vars */
 
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
+import { Outlet, useNavigate } from 'react-router-dom';
 
-import { sales } from '../../constants/appConstants';
-import { Outlet } from 'react-router-dom';
+// import { sales } from '../../constants/appConstants';
 const Sales = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="demo-wrapper">
-      {sales.map((tab, index) => {
+      {/* {sales.map((tab, index) => {
         // console.log(tab);
         return (
-          <TabStrip>
-            <TabStripTab title={tab.name} key={index}>
-              <div className="wrapper">
-                <div className="details">
-                </div>
-              </div>
-            </TabStripTab>
-          </TabStrip>
+          <>
+            <button
+              
+              onClick={() => {
+                navigate(tab.route);
+              }}>
+              {tab.name}
+            </button>
+          </>
+           
         );
-      })}
+      })} */}
       <Outlet />
     </div>
   );

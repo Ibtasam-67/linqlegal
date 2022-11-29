@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
-import {  Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 
-import { purchases } from '../../constants/appConstants';
+//  import { purchases } from '../../constants/appConstants';
 
 const Purchase = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="demo-wrapper">
       {/* <TabStrip>
@@ -17,33 +17,26 @@ const Purchase = () => {
                 style={{
                   fontWeight: 'bolder'
                 }}> */}
-   
-      {purchases.map((tab, index) => {
-        // console.log(tab);
+
+      {/* {purchases.map((tab, index) => {
         return (
-          // <>{tab.title} </>  
-                <button
-                  style={{
-                    fontWeight: 'bolder',
-                    paddingRight:10
-                  }}
-                  onClick={
-                    ()=>{
-                      navigate(tab.route)
-                    }
-                  }
-                  >
-                  {tab.name} 
-                </button>  
+          // <>{tab.title} </>
+          <button
+           
+            onClick={() => {
+              navigate(tab.route);
+            }}>
+            {tab.name}
+          </button>
         );
-      })}
+      })} */}
       {/* </span>
             </div>
           </div>
         </TabStripTab>
       </TabStrip> */}
 
-      <Outlet/>
+      <Outlet />
     </div>
   );
 };

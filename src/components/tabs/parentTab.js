@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
+import { useNavigate, Outlet } from 'react-router-dom';
 
 import { tabs } from '../../constants/appConstants';
-import { useNavigate, Outlet } from 'react-router-dom';
 
 const Title = (props) => {
   return (
@@ -15,12 +15,13 @@ const Title = (props) => {
 
 const Tabs = () => {
   const [selected, setSelected] = useState(0);
-
   const navigate = useNavigate();
- 
+  const handleSelect = (e) => {
+    setSelected(e.selected);
+  };
   return (
     <div className="demo-wrapper">
-      <TabStrip selected={selected}>
+      <TabStrip selected={selected} onSelect={handleSelect}>
         {tabs.map((tab, index) => {
           return (
             <TabStripTab
@@ -28,7 +29,6 @@ const Tabs = () => {
                 <Title
                   tab={tab}
                   onClick={() => {
-                    console.log('wooking');
                     navigate(tab.route);
                   }}
                 />

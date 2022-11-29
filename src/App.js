@@ -6,15 +6,18 @@ import Purchase from './components/purchase/purchase';
 import Sales from './components/sales/sales';
 import Postings from './components/Postings';
 import SuppliersLedger from './components/purchaseComponenets/suppliersLedger';
-import SalePosting from './components/purchaseComponenets/salePosting';
+import SalePosting from './components/salesComponents/salePosting';
 import MatterPosting from './components/matterPosting';
 import Home from './components/home/home';
 import ParentTabs from './components/tabs/parentTab';
 import Navbar from './components/navbar/navbar';
-import './App.css';
 import Suppliers from './components/purchaseComponenets/suppliers';
 import PurchaseInvoice from './components/purchaseComponenets/purchaseInvoice';
 import Disburcements from './components/purchaseComponenets/disburcements';
+import MatterLedger from './components/salesComponents/matterLedger';
+import Bills from './components/salesComponents/bills';
+import ClientPostings from './components/salesComponents/clientPostings';
+import './App.css';
 
 function App() {
   return (
@@ -27,7 +30,10 @@ function App() {
 
           <Route element={<ParentTabs />}>
             <Route element={<Sales />}>
-              <Route path="/saleposting" element={<SalePosting />} />
+              <Route path="/posting" element={<SalePosting />} />
+              <Route path="/matterledger" element={<MatterLedger />} />
+              <Route path="/bills" element={<Bills />} />
+              <Route path="/clientpostings" element={<ClientPostings />} />
             </Route>
 
             <Route element={<Postings />}>

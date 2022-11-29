@@ -12,7 +12,7 @@ const Matters = () => {
                 style={{
                   fontWeight: 'bolder'
                 }}>
-             Matter tab here
+             Matter tab
               </span>
             </div>
           </div>
