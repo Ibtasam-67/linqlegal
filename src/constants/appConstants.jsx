@@ -1,27 +1,17 @@
-import Posting from '../components/purchase/purchase';
-import Purchase from '../components/Postings';
-import Sales from '../components/sales/sales';
-
-const imagesUrl =
-  'https://www.telerik.com/kendo-angular-ui-develop/components/layout/assets/tabstrip/';
-
 export const tabs = [
   {
     title: 'Matters',
-    image: `${imagesUrl}sun.png`,
-    component: <Posting />,
+
     route: 'matterPosting'
   },
   {
     title: 'Sales',
-    image: `${imagesUrl}rain.png`,
-    component: <Sales />,
+
     route: 'posting'
   },
   {
     title: 'Purchase',
-    image: `${imagesUrl}sun.png`,
-    component: <Purchase />,
+
     route: 'purchase'
   }
 ];

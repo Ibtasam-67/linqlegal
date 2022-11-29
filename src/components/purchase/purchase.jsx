@@ -2,39 +2,24 @@
 
 import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 import { Outlet, useNavigate } from 'react-router-dom';
-
-//  import { purchases } from '../../constants/appConstants';
+import { purchases } from '../../constants/appConstants';
 
 const Purchase = () => {
   const navigate = useNavigate();
-  return (
-    <div className="demo-wrapper">
-      {/* <TabStrip>
-        <TabStripTab>
-          <div className="wrapper">
-            <div className="details">
-              <span
-                style={{
-                  fontWeight: 'bolder'
-                }}> */}
 
-      {/* {purchases.map((tab, index) => {
+  return (
+    <div>
+      {purchases.map((tab, index) => {
         return (
-          // <>{tab.title} </>
-          <button
-           
-            onClick={() => {
+          <TabStrip
+            key={index}
+            onSelect={() => {
               navigate(tab.route);
             }}>
-            {tab.name}
-          </button>
+            <TabStripTab title={tab.name}></TabStripTab>
+          </TabStrip>
         );
-      })} */}
-      {/* </span>
-            </div>
-          </div>
-        </TabStripTab>
-      </TabStrip> */}
+      })}
 
       <Outlet />
     </div>

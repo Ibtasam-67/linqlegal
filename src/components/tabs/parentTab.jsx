@@ -7,18 +7,19 @@ import { tabs } from '../../constants/appConstants';
 const Title = (props) => {
   return (
     <>
-      <img className="tab-image" src={props.tab.image} alt="tab-image" />
       <button onClick={props.onClick}>{props.tab.title}</button>
     </>
   );
 };
 
 const Tabs = () => {
+
   const [selected, setSelected] = useState(0);
   const navigate = useNavigate();
   const handleSelect = (e) => {
     setSelected(e.selected);
   };
+  
   return (
     <div className="demo-wrapper">
       <TabStrip selected={selected} onSelect={handleSelect}>
