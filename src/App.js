@@ -21,6 +21,8 @@ import {
   PurchasePostingg
 } from './components/index';
 
+import SalePosting from './components/salePosting';
+
 import './App.css';
 
 function App() {
@@ -34,6 +36,7 @@ function App() {
 
           <Route element={<ParentTabss />}>
             {/* <Route element={<Saless />}> */}
+            <Route path="/postings" element={<SalePosting />} />
             <Route path="/posting" element={<SalePostingg />} />
             <Route path="/matterledger" element={<MatterLedgerr />} />
             <Route path="/bills" element={<Billss />} />

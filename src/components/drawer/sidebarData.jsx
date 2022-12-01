@@ -1,4 +1,3 @@
-import { FaRegDotCircle } from 'react-icons/fa';
 import { AiFillDashboard } from 'react-icons/ai';
 import { IoBriefcase } from 'react-icons/io5';
 import { IoMdContact } from 'react-icons/io';
@@ -24,28 +23,28 @@ export const sidebarDataSales = [
     title: 'Postings',
     type: 'item',
     url: '/posting',
-    icon: <FaRegDotCircle />
+    text:"P"
   },
   {
     id: 'matter ledger',
     title: 'Matter Ledger',
     type: 'item',
     url: 'matterledger',
-    icon: <FaRegDotCircle />
+    text:"ML"
   },
   {
     id: 'bills',
     title: 'Bills',
     type: 'item',
     url: 'bills',
-    icon: <FaRegDotCircle />
+    text:"B"
   },
   {
     id: 'client-postings',
     title: 'Client Postings',
     type: 'item',
     url: 'clientpostings',
-    icon: <FaRegDotCircle />
+    text:"C"
   }
 ];
 
@@ -55,28 +54,28 @@ export const sidebarDataPurchases = [
     title: 'Suppliers',
     type: 'item',
     url: '/suppliers',
-    icon: <FaRegDotCircle />
+    text:"S"
   },
   {
     id: 'supplier-ledger',
     title: 'Supplier Ledger',
     type: 'item',
     url: '/supplierledger',
-    icon: <FaRegDotCircle />
+    text:"SL"
   },
   {
     id: 'purchace-invoice',
     title: 'Purchase Invoice',
     type: 'item',
     url: '/purchaceinvoice',
-    icon: <FaRegDotCircle />
+    text:"P"
   },
   {
     id: 'disburcements',
     title: 'Disburcemets',
     type: 'item',
     url: '/disburcements',
-    icon: <FaRegDotCircle />
+    text:"D"
   }
 ];
 
@@ -86,20 +85,20 @@ export const sidebarDataNominals = [
     title: 'Nominals Ledger',
     type: 'item',
     url: '/disburcements',
-    icon: <FaRegDotCircle />
+   text:"N"
   },
   {
     id: 'disburcements',
     title: 'Nominals Ledger',
     type: 'item',
     url: '/disburcements',
-    icon: <FaRegDotCircle />
+   text:"N"
   },
   {
     id: 'disburcements',
     title: 'Nominals Ledger',
     type: 'item',
     url: '/disburcements',
-    icon: <FaRegDotCircle />
+   text:"N"
   }
 ];

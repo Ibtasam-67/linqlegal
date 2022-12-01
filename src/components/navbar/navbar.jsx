@@ -8,7 +8,7 @@ let kendokaAvatar =
 const Navbar = () => {
   return (
     <React.Fragment>
-      <AppBar>
+      <AppBar style={{ backgroundColor: '#282E37' }}>
         <AppBarSection className="title">
           <h1 className="title">KendoReact</h1>
         </AppBarSection>
@@ -19,11 +19,12 @@ const Navbar = () => {
           }}
         />
 
-        <AppBarSection className="appbar-items">
+        <AppBarSection>
           <ul>
             <li>
-              <span> Matter Ledger</span>
+              <span className='heading' > Matter Ledger</span>
             </li>
+            <li></li>
           </ul>
         </AppBarSection>
 
@@ -31,9 +32,9 @@ const Navbar = () => {
 
         <AppBarSection className="user-actions">
           <button className="k-button k-button-md k-rounded-md k-button-flat k-button-flat-base">
-            <BadgeContainer>
+            <BadgeContainer style={{color:"white"}}>
               <span className="k-icon k-i-bell" />
-              <Badge shape="dot" themeColor="info" size="small" position="inside" />
+              <Badge shape="dot" themeColor="info" size="small" position="inside"  />
             </BadgeContainer>
           </button>
           <span className="k-appbar-separator" />
@@ -48,10 +49,12 @@ const Navbar = () => {
       <style>{`
           body {
               background: #dfdfdf;
+
           }
           .title {
               font-size: 18px;
               margin: 0;
+              color:white
           }
           .k-badge-container {
               margin-right: 8px;
@@ -61,10 +64,16 @@ const Navbar = () => {
               list-style-type: none;
               padding: 0;
               margin: 0;
-              display: flex;
+              display: flex;  
+           
           }
           li {
               margin: 0 9px;
+              color:white;
+              display:flex;
+              border:2px solid red
+              justifyContent:cente
+
           }
           li:hover {
               cursor: pointer;
@@ -88,6 +97,7 @@ const Navbar = () => {
           }
           .userName {
               padding: 4px 8px;
+              color: #F6BA31
           }
           
           @media only screen and (max-width: 600px) {
@@ -102,6 +112,7 @@ const Navbar = () => {
               }
               .content ul li:last-child {
                   display: block;
+                  color:white
               }
           }
           /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -117,6 +128,7 @@ const Navbar = () => {
               }
               .content ul li:last-child {
                   display: none;
+                  color:white
               }
           }
           /* Medium devices (landscape tablets, 768px and up) */

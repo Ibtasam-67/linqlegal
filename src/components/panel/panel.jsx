@@ -12,26 +12,26 @@ import './panel.css';
 
 const Panel = () => {
   return (
-    <div  className='parent'>
-      <PanelBar >
+    <div className="parent">
+      <PanelBar>
         {panelBar.map((item, index) => {
           return (
-            <div className="panel-bar-items">
+            <div className="panel-bar-items" >
               <div key={index} className="icons-text">
                 <span className="icons">{item.icon}</span>
-                <div className="text">{item.title}</div>
+                <div className="text-head">{item.title}</div>
               </div>
             </div>
           );
         })}
 
-        <PanelBarItem title={'Sales'}  >
+        <PanelBarItem title={'Sales'}>
           {sidebarDataSales.map((item, index) => {
             return (
               <div key={index} className="icons-text">
-                <span className="icons">{item.icon}</span>
+                <span className="circle">{item.text}</span>
                 <Link to={item.url}>
-                  <div className="text">{item.title}</div>
+                  <div className="text-span">{item.title}</div>
                 </Link>
               </div>
             );
@@ -42,9 +42,10 @@ const Panel = () => {
           {sidebarDataPurchases.map((item, index) => {
             return (
               <div key={index} className="icons-text">
-                <span className="icons">{item.icon}</span>
+                <span className="circle">{item.text}</span>
+
                 <Link to={item.url}>
-                  <div className="text">{item.title}</div>
+                  <div className="text-span">{item.title}</div>
                 </Link>
               </div>
             );
@@ -54,9 +55,9 @@ const Panel = () => {
           {sidebarDataNominals.map((item, index) => {
             return (
               <div key={index} className="icons-text">
-                <span className="icons">{item.icon}</span>
+                <span className="circle">{item.text}</span>
                 <Link to={item.url}>
-                  <div className="text">{item.title}</div>
+                  <div className="text-span">{item.title}</div>
                 </Link>
               </div>
             );

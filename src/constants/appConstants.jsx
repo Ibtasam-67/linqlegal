@@ -5,7 +5,7 @@ export const tabs = [
   },
   {
     title: 'Sales',
-    // route: 'posting'
+    route: 'postings'
   },
   {
     title: 'Purchase',
