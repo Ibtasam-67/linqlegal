@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
 const MatterLedger = () => {
   return (
-    <div>MatterLedger Componet</div>
-  )
-}
+    <div>
+      <TabStrip>
+        <TabStripTab title={'Matter Ledger'}></TabStripTab>
+      </TabStrip>
+    </div>
+  );
+};
 
-export default MatterLedger
+export default MatterLedger;

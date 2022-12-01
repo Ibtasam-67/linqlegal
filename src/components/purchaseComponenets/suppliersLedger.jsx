@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
 const SuppliersLedger = () => {
   return (
     <div>
-      <span>Suppliers Ledger Component</span>
+      <TabStrip>
+        <TabStripTab title={'Suppliers Ledger'}></TabStripTab>
+      </TabStrip>
     </div>
   );
 };

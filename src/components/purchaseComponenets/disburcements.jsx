@@ -1,7 +1,14 @@
 import React from 'react';
+import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 
 const Disburcements = () => {
-  return <div>Disburcements Component</div>;
+  return (
+    <div>
+      <TabStrip>
+        <TabStripTab title={'Disburcements'}></TabStripTab>
+      </TabStrip>
+    </div>
+  );
 };
 
 export default Disburcements;

@@ -3,11 +3,14 @@ import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 import { useNavigate, Outlet } from 'react-router-dom';
 
 import { tabs } from '../../../constants/appConstants';
+import "./parentTab.css"
 
 const Title = (props) => {
   return (
     <>
-      <button onClick={props.onClick}>{props.tab.title}</button>
+      <button onClick={props.onClick} className="tabs">
+        {props.tab.title}
+      </button>
     </>
   );
 };

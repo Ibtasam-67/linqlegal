@@ -13,7 +13,7 @@ import './panel.css';
 const Panel = () => {
   return (
     <div  className='parent'>
-      <PanelBar>
+      <PanelBar >
         {panelBar.map((item, index) => {
           return (
             <div className="panel-bar-items">

@@ -1,8 +1,14 @@
 import React from 'react'
+import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
+
 
 const Bills = () => {
   return (
-    <div>Bills</div>
+    <div> 
+        <TabStrip>
+        <TabStripTab title={'Bills'}></TabStripTab>
+      </TabStrip>
+    </div>
   )
 }
 
