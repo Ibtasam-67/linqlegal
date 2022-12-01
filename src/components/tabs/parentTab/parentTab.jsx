@@ -3,7 +3,7 @@ import { TabStrip, TabStripTab } from '@progress/kendo-react-layout';
 import { useNavigate, Outlet } from 'react-router-dom';
 
 import { tabs } from '../../../constants/appConstants';
-import "./parentTab.css"
+import './parentTab.css';
 
 const Title = (props) => {
   return (
@@ -24,7 +24,8 @@ const Tabs = () => {
 
   return (
     <div className="demo-wrapper">
-      <TabStrip selected={selected} onSelect={handleSelect}>
+      <TabStrip selected={selected} onSelect={handleSelect}  >
+        
         {tabs.map((tab, index) => {
           return (
             <TabStripTab

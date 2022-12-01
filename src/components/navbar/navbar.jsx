@@ -10,9 +10,9 @@ const Navbar = () => {
     <React.Fragment>
       <AppBar style={{ backgroundColor: '#282E37' }}>
         <AppBarSection className="title">
-          <h1 className="title">KendoReact</h1>
+         <img src='/logo.png' className='logo'/>
         </AppBarSection>
-
+ 
         <AppBarSpacer
           style={{
             width: 32
@@ -50,6 +50,11 @@ const Navbar = () => {
           body {
               background: #dfdfdf;
 
+          }.logo{
+            width:30px;
+            height:30px;
+            padding:2px;
+            margin-Left:2px
           }
           .title {
               font-size: 18px;

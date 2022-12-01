@@ -13,7 +13,7 @@ import './panel.css';
 const Panel = () => {
   return (
     <div className="parent">
-      <PanelBar>
+      <PanelBar className="panelbar" backgroundColor="black" >
         {panelBar.map((item, index) => {
           return (
             <div className="panel-bar-items" >
@@ -25,7 +25,7 @@ const Panel = () => {
           );
         })}
 
-        <PanelBarItem title={'Sales'}>
+        <PanelBarItem title={'Sales'}  className="item-bar">
           {sidebarDataSales.map((item, index) => {
             return (
               <div key={index} className="icons-text">
@@ -38,7 +38,7 @@ const Panel = () => {
           })}
         </PanelBarItem>
 
-        <PanelBarItem title={'Purchase'}>
+        <PanelBarItem title={'Purchase'}  className="item-bar" >
           {sidebarDataPurchases.map((item, index) => {
             return (
               <div key={index} className="icons-text">
@@ -51,7 +51,7 @@ const Panel = () => {
             );
           })}
         </PanelBarItem>
-        <PanelBarItem title={'Nominal'}>
+        <PanelBarItem title={'Nominal'}  className="item-bar">
           {sidebarDataNominals.map((item, index) => {
             return (
               <div key={index} className="icons-text">

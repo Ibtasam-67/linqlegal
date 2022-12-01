@@ -17,7 +17,7 @@ const Sales = () => {
             onSelect={() => {
               navigate(tab.route);
             }}>
-            <TabStripTab title={tab.name}></TabStripTab>
+            {/* <TabStripTab title={tab.name}></TabStripTab> */}
           </TabStrip>
         );
       })}

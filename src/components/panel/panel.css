@@ -1,15 +1,16 @@
 .parent {
   width: 180px;
   height: 92vh;
-  background-color: white;
-  
+  background-color: #f9dfb4;
+}
+.panelbar {
+  background-color: #f9dfb4;
 }
 .icons-text {
   display: flex;
   padding: 6px;
   cursor: pointer;
-  background-color: #F9DFB4;
-
+  background-color: #f9dfb4;
 }
 .icons {
   font-size: 18px;
@@ -17,12 +18,12 @@
 
 .text-head {
   padding-left: 10px;
-  color: 	#64605A;
+  color: #64605a;
   font-weight: 600;
 }
 .text-span {
   padding-left: 10px;
-  color: 	#64605A;
+  color: #64605a;
   font-weight: 400;
 }
 a:link {
@@ -30,17 +31,35 @@ a:link {
 }
 .panel-bar-items {
   padding-left: 10px;
-  background-color: #F9DFB4;
+  background-color: #f9dfb4;
 }
 .circle {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #F6BA31;
+  background-color: #f6ba31;
   display: flex;
   justify-content: center;
   font-size: 9px;
-  font-weight: 700;
-   padding: 4px;
-   color: #8B6817;
+  font-weight: 800;
+  padding: 4px;
+  color: #8b6817;
+  margin-left: 10px;
+}
+.item-bar {
+  width: 100% !important;
+  margin-left: -0.3px;
+}
+.k-panelbar > .k-panelbar-header > .k-link.k-selected {
+  background-color: #f9dfb4 !important;
+  color: #000000 !important;
+}
+.k-link {
+  background-color: #f9dfb4 !important;
+}
+.k-panelbar-item-text {
+  color: #64605a;
+}
+.k-panelbar-toggle {
+  color: #64605a !important;
 }

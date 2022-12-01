@@ -1,8 +1,12 @@
 .tabs {
-  background-color: white;
-  color: #ff6358;
+  background-color: white !important;
+  color: #64605a;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   font-weight: 600;
 }
+.demo-wrapper{
+  background-color: #ffff;
+}
+ 
